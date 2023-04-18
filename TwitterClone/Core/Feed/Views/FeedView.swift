@@ -12,7 +12,7 @@ struct FeedView: View {
         ScrollView {
             VStack {
                 ForEach(0..<20) { _ in
-                    Text("tweet")
+                    TweetView()
                 }
             }
         }
