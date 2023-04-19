@@ -9,18 +9,22 @@ import SwiftUI
 
 struct TweetView: View {
     var body: some View {
-        HStack(alignment: .top) {
-            Image(systemName: "person.circle.fill")
-                .resizable()
-                .frame(width: 56, height: 56)
-                .foregroundColor(Color(.systemBlue))
-            
-            VStack(alignment: .leading, spacing: 4) {
-                TweetContentView()
-                TweetActionBarView()
+        VStack{
+            HStack(alignment: .top) {
+                Image(systemName: "person.circle.fill")
+                    .resizable()
+                    .frame(width: 56, height: 56)
+                    .foregroundColor(Color(.systemBlue))
+                
+                VStack(alignment: .leading, spacing: 4) {
+                    TweetContentView()
+                    TweetActionBarView()
+                }
             }
+            .padding()
+            
+            Divider()
         }
-        .padding()
     }
 }
 
